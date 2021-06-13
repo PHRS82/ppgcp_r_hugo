@@ -19,13 +19,14 @@ banco$Q1607 <- ifelse(banco$Q1607 > 10, NA, banco$Q1607)
 banco$Q1501 <- ifelse(banco$Q1501 > 10, NA, banco$Q1501)
 banco$Q18 <- ifelse(banco$Q18 > 10, NA, banco$Q18)
 banco$D9 <- ifelse(banco$D9 > 9999997, NA, banco$D9)
-#banco$D12A <- ifelse(banco$D12A == "Não sabe (Esp.)", NA, banco$D12A)
-#banco$D12A <- ifelse(banco$D12A == "Não respondeu (Esp.)", NA, banco$D12A)
 
 
+
 ################################################################################
 ################################################################################
 ################################################################################
+
+
 
 #Shadow Matrix
 bancoNA <- as.data.frame(abs(is.na(banco)))
